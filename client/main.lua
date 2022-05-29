@@ -161,10 +161,23 @@ RegisterNetEvent("qb-wepdrop:client:StartDrop", function(roofCheck, planeSpawnDi
 end)
 
 RegisterNetEvent('qb-wepdrop:client:getItems', function()
-    TriggerServerEvent('qb-wepdrop:server:recieveItems')
-    DeleteEntity(crate)
-    DeleteEntity(parachute)
-    exports['qb-target']:RemoveTargetModel('h4_prop_h4_box_ammo_02a', '')
+    QBCore.Functions.Progressbar('open_crate', 'Opening the crate...', 4000, false, true, {
+        disableMovement = true,
+        disableCarMovement = true,
+        disableMouse = false,
+        disableCombat = true,
+    }, {
+        animDict = 'mp_car_bomb',
+        anim = 'car_bomb_mechanic',
+        flags = 16,
+    }, {}, {}, function()
+        TriggerServerEvent('qb-wepdrop:server:recieveItems')
+        DeleteEntity(crate)
+        DeleteEntity(parachute)
+        exports['qb-target']:RemoveTargetModel('h4_prop_h4_box_ammo_02a', '')
+    end, function()
+        QBCore.Functions.Notify('Cancelled', 'error')
+    end)
 end)
 
 -- On resource stop do things
