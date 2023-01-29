@@ -118,8 +118,7 @@ RegisterNetEvent("qb-wepdrop:client:CreateDrop", function(roofCheck, planeSpawnD
                     
                     -- You could trigger a police alert here
 
-                    TriggerServerEvent('QBCore:Server:RemoveItem', 'dropphone', 1)
-                    TriggerEvent('inventory:client:ItemBox', QBCore.Shared.Items['dropphone'], 'remove')
+                    TriggerServerEvent('qb-weapondrop:server:removeDropPhone')
                     TriggerServerEvent('drop:server:startCooldown')
                 else
                     QBCore.Functions.Notify("Not enough cops ("..CurrentCops.."/"..Config.RequiredCops..")", "error")
