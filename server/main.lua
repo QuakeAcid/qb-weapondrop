@@ -91,6 +91,17 @@ RegisterServerEvent('qb-wepdrop:server:getDropPhone', function()
     end
 end)
 
+RegisterServerEvent('qb-weapondrop:server:removeDropPhone', function()
+	local src = source
+	local Player = QBCore.Functions.GetPlayer(src)
+	if Player then
+		if QBCore.Functions.HasItem(src, 'dropphone', 1) then
+			exports['qb-inventory']:RemoveItem(src, 'dropphone', 1)
+			TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['dropphone'], 'remove')
+		end
+	end
+end)
+
 RegisterServerEvent('drop:server:startCooldown', function()
     local src = source
     TriggerClientEvent('drop:client:dropFalse', -1)
