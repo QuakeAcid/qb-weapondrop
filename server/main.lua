@@ -8,62 +8,62 @@ RegisterServerEvent("qb-wepdrop:server:recieveItems", function()
     if Player then
         if chance >= 0 and chance <= 49 then
             if chance2 < 50 then
-                Player.Functions.AddItem(Config.PistolTierReward1, 1)
+                exports['qb-inventory']:AddItem(src, Config.PistolTierReward1, 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.PistolTierReward1], 'add')
-                Player.Functions.AddItem(Config.PistolTierReward1, 1)
+                exports['qb-inventory']:AddItem(src, Config.PistolTierReward1, 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.PistolTierReward1], 'add')
-                Player.Functions.AddItem(Config.PistolTierReward1, 1)
+               	exports['qb-inventory']:AddItem(src, Config.PistolTierReward1, 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.PistolTierReward1], 'add')
-                Player.Functions.AddItem(Config.PistolTierReward1, 1)
+                exports['qb-inventory']:AddItem(src, Config.PistolTierReward1, 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.PistolTierReward1], 'add')
             elseif chance2 >= 50 then
-                Player.Functions.AddItem(Config.PistolTierReward2, 1)
+                exports['qb-inventory']:AddItem(src, Config.PistolTierReward2, 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.PistolTierReward2], 'add')
-                Player.Functions.AddItem(Config.PistolTierReward2, 1)
+                exports['qb-inventory']:AddItem(src, Config.PistolTierReward2, 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.PistolTierReward2], 'add')
-                Player.Functions.AddItem(Config.PistolTierReward2, 1)
+                exports['qb-inventory']:AddItem(src, Config.PistolTierReward2, 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.PistolTierReward2], 'add')
-                Player.Functions.AddItem(Config.PistolTierReward2, 1)
+                exports['qb-inventory']:AddItem(src, Config.PistolTierReward2, 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.PistolTierReward2], 'add')
             end
         elseif chance >= 50 and chance <= 79 then
             if chance2 < 50 then
-                Player.Functions.AddItem(Config.SmgTierReward1, 1)
+                exports['qb-inventory']:AddItem(src, Config.SmgTierReward1, 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.SmgTierReward1], 'add')
-                Player.Functions.AddItem(Config.SmgTierReward1, 1)
+                exports['qb-inventory']:AddItem(src, Config.SmgTierReward1, 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.SmgTierReward1], 'add')
-                Player.Functions.AddItem(Config.SmgTierReward1, 1)
+                exports['qb-inventory']:AddItem(src, Config.SmgTierReward1, 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.SmgTierReward1], 'add')
-                Player.Functions.AddItem(Config.SmgTierReward1, 1)
+                exports['qb-inventory']:AddItem(src, Config.SmgTierReward1, 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.SmgTierReward1], 'add')
             elseif chance2 >= 50 then
-                Player.Functions.AddItem(Config.SmgTierReward2, 1)
+                exports['qb-inventory']:AddItem(src, Config.SmgTierReward2, 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.SmgTierReward2], 'add')
-                Player.Functions.AddItem(Config.SmgTierReward2, 1)
+                exports['qb-inventory']:AddItem(src, Config.SmgTierReward2, 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.SmgTierReward2], 'add')
-                Player.Functions.AddItem(Config.SmgTierReward2, 1)
+                exports['qb-inventory']:AddItem(src, Config.SmgTierReward2, 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.SmgTierReward2], 'add')
-                Player.Functions.AddItem(Config.SmgTierReward2, 1)
+                exports['qb-inventory']:AddItem(src, Config.SmgTierReward2, 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.SmgTierReward2], 'add')
             end
         elseif chance >= 80 and chance <= 100 then
             if chance2 < 50 then
-                Player.Functions.AddItem(Config.ARTierReward1, 1)
+                exports['qb-inventory']:AddItem(src, Config.ARTierReward1, 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.ARTierReward1], 'add')
-                Player.Functions.AddItem(Config.ARTierReward1, 1)
+                exports['qb-inventory']:AddItem(src, Config.ARTierReward1, 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.ARTierReward1], 'add')
-                Player.Functions.AddItem(Config.ARTierReward1, 1)
+                exports['qb-inventory']:AddItem(src, Config.ARTierReward1, 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.ARTierReward1], 'add')
-                Player.Functions.AddItem(Config.ARTierReward1, 1)
+                exports['qb-inventory']:AddItem(src, Config.ARTierReward1, 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.ARTierReward1], 'add')
             elseif chance2 >= 50 then
-                Player.Functions.AddItem(Config.ARTierReward2, 1)
+                exports['qb-inventory']:AddItem(src, Config.ARTierReward2, 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.ARTierReward2], 'add')
-                Player.Functions.AddItem(Config.ARTierReward2, 1)
+                exports['qb-inventory']:AddItem(src, Config.ARTierReward2, 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.ARTierReward2], 'add')
-                Player.Functions.AddItem(Config.ARTierReward2, 1)
+                exports['qb-inventory']:AddItem(src, Config.ARTierReward2, 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.ARTierReward2], 'add')
-                Player.Functions.AddItem(Config.ARTierReward2, 1)
+                exports['qb-inventory']:AddItem(src, Config.ARTierReward2, 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.ARTierReward2], 'add')
             end
         end
@@ -74,13 +74,13 @@ RegisterServerEvent('qb-wepdrop:server:getDropPhone', function()
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
     if Player then
-        if Player.Functions.GetItemByName('emptydropphone') then
+        if QBCore.Functions.HasItem(src, 'emptydropphone', 1) then
             if Player.Functions.GetMoney('cash') >= Config.DropPhonePrice then
-                Player.Functions.RemoveItem('emptydropphone', 1)
+                exports['qb-inventory']:RemoveItem(src, 'emptydropphone', 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['emptydropphone'], 'remove')
                 Player.Functions.RemoveMoney('cash', Config.DropPhonePrice)
 
-                Player.Functions.AddItem('dropphone', 1)
+                exports['qb-inventory']:AddItem(src, 'dropphone', 1)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['dropphone'], 'add')
             else
                 TriggerClientEvent('QBCore:Notify', src, 'You don\'t have enough money!', 'error')
@@ -115,7 +115,7 @@ end)
 QBCore.Functions.CreateUseableItem("dropphone", function(source, item)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-	if Player.Functions.GetItemByName(item.name) then
+	if QBCore.Functions.HasItem(src, item.name, 1) then
         TriggerClientEvent("qb-wepdrop:client:CreateDrop", src, true, 400)
     end
 end)
